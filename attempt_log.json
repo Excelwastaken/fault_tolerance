@@ -1,0 +1,210 @@
+[
+  {
+    "timestamp": "2026-09-27 10:00:02",
+    "tx_id": "T001",
+    "attempt": 1,
+    "failure_type": "-",
+    "action": "Commit",
+    "result": "Success"
+  },
+  {
+    "timestamp": "2026-09-27 10:00:04",
+    "tx_id": "T002",
+    "attempt": 1,
+    "failure_type": "Network",
+    "action": "Retry scheduled",
+    "result": "Fail"
+  },
+  {
+    "timestamp": "2026-09-27 10:00:06",
+    "tx_id": "T002",
+    "attempt": 2,
+    "failure_type": "-",
+    "action": "Commit",
+    "result": "Success"
+  },
+  {
+    "timestamp": "2026-09-27 10:00:08",
+    "tx_id": "T003",
+    "attempt": 1,
+    "failure_type": "-",
+    "action": "Commit",
+    "result": "Success"
+  },
+  {
+    "timestamp": "2026-09-27 10:00:10",
+    "tx_id": "T004",
+    "attempt": 1,
+    "failure_type": "Timeout",
+    "action": "Retry scheduled",
+    "result": "Fail"
+  },
+  {
+    "timestamp": "2026-09-27 10:00:12",
+    "tx_id": "T004",
+    "attempt": 2,
+    "failure_type": "Timeout",
+    "action": "Retry scheduled",
+    "result": "Fail"
+  },
+  {
+    "timestamp": "2026-09-27 10:00:14",
+    "tx_id": "T004",
+    "attempt": 3,
+    "failure_type": "-",
+    "action": "Commit",
+    "result": "Success"
+  },
+  {
+    "timestamp": "2026-09-27 10:00:16",
+    "tx_id": "T005",
+    "attempt": 1,
+    "failure_type": "-",
+    "action": "Commit",
+    "result": "Success"
+  },
+  {
+    "timestamp": "2026-09-27 10:00:18",
+    "tx_id": "T006",
+    "attempt": 1,
+    "failure_type": "Database",
+    "action": "Retry scheduled",
+    "result": "Fail"
+  },
+  {
+    "timestamp": "2026-09-27 10:00:20",
+    "tx_id": "T006",
+    "attempt": 2,
+    "failure_type": "Database",
+    "action": "Retry scheduled",
+    "result": "Fail"
+  },
+  {
+    "timestamp": "2026-09-27 10:00:22",
+    "tx_id": "T006",
+    "attempt": 3,
+    "failure_type": "Database",
+    "action": "Rollback",
+    "result": "Fail"
+  },
+  {
+    "timestamp": "2026-09-27 10:00:24",
+    "tx_id": "T007",
+    "attempt": 1,
+    "failure_type": "-",
+    "action": "Commit",
+    "result": "Success"
+  },
+  {
+    "timestamp": "2026-09-27 10:00:26",
+    "tx_id": "T008",
+    "attempt": 1,
+    "failure_type": "Network",
+    "action": "Retry scheduled",
+    "result": "Fail"
+  },
+  {
+    "timestamp": "2026-09-27 10:00:28",
+    "tx_id": "T008",
+    "attempt": 2,
+    "failure_type": "-",
+    "action": "Commit",
+    "result": "Success"
+  },
+  {
+    "timestamp": "2026-09-27 10:00:30",
+    "tx_id": "T009",
+    "attempt": 1,
+    "failure_type": "-",
+    "action": "Commit",
+    "result": "Success"
+  },
+  {
+    "timestamp": "2026-09-27 10:00:32",
+    "tx_id": "T010",
+    "attempt": 1,
+    "failure_type": "Timeout",
+    "action": "Retry scheduled",
+    "result": "Fail"
+  },
+  {
+    "timestamp": "2026-09-27 10:00:34",
+    "tx_id": "T010",
+    "attempt": 2,
+    "failure_type": "Timeout",
+    "action": "Retry scheduled",
+    "result": "Fail"
+  },
+  {
+    "timestamp": "2026-09-27 10:00:36",
+    "tx_id": "T010",
+    "attempt": 3,
+    "failure_type": "-",
+    "action": "Commit",
+    "result": "Success"
+  },
+  {
+    "timestamp": "2026-09-27 10:00:38",
+    "tx_id": "T011",
+    "attempt": 1,
+    "failure_type": "-",
+    "action": "Commit",
+    "result": "Success"
+  },
+  {
+    "timestamp": "2026-09-27 10:00:40",
+    "tx_id": "T012",
+    "attempt": 1,
+    "failure_type": "Database",
+    "action": "Retry scheduled",
+    "result": "Fail"
+  },
+  {
+    "timestamp": "2026-09-27 10:00:42",
+    "tx_id": "T012",
+    "attempt": 2,
+    "failure_type": "Database",
+    "action": "Retry scheduled",
+    "result": "Fail"
+  },
+  {
+    "timestamp": "2026-09-27 10:00:44",
+    "tx_id": "T012",
+    "attempt": 3,
+    "failure_type": "Database",
+    "action": "Rollback",
+    "result": "Fail"
+  },
+  {
+    "timestamp": "2026-09-27 10:00:46",
+    "tx_id": "T013",
+    "attempt": 1,
+    "failure_type": "-",
+    "action": "Commit",
+    "result": "Success"
+  },
+  {
+    "timestamp": "2026-09-27 10:00:48",
+    "tx_id": "T014",
+    "attempt": 1,
+    "failure_type": "-",
+    "action": "Commit",
+    "result": "Success"
+  },
+  {
+    "timestamp": "2026-09-27 10:00:50",
+    "tx_id": "T015",
+    "attempt": 1,
+    "failure_type": "Network",
+    "action": "Retry scheduled",
+    "result": "Fail"
+  },
+  {
+    "timestamp": "2026-09-27 10:00:52",
+    "tx_id": "T015",
+    "attempt": 2,
+    "failure_type": "-",
+    "action": "Commit",
+    "result": "Success"
+  }
+]

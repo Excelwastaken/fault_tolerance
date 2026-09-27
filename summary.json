@@ -1,0 +1,244 @@
+{
+  "part_a": {
+    "attempted": [
+      "T001",
+      "T002"
+    ],
+    "successful": [
+      "T001"
+    ],
+    "lost": [
+      "T002",
+      "T003",
+      "T004",
+      "T005",
+      "T006",
+      "T007",
+      "T008",
+      "T009",
+      "T010",
+      "T011",
+      "T012",
+      "T013",
+      "T014",
+      "T015"
+    ],
+    "processed_amount": 12000,
+    "lost_amount": 425000,
+    "stopped_at": "T002"
+  },
+  "part_b": [
+    {
+      "tx_id": "T001",
+      "failure_type": "None",
+      "exception": null,
+      "recovery_action": "None needed",
+      "final_status": "Success"
+    },
+    {
+      "tx_id": "T002",
+      "failure_type": "Network",
+      "exception": "ConnectionError",
+      "recovery_action": "Logged failure, transaction skipped, processing continued",
+      "final_status": "Failed"
+    },
+    {
+      "tx_id": "T003",
+      "failure_type": "None",
+      "exception": null,
+      "recovery_action": "None needed",
+      "final_status": "Success"
+    },
+    {
+      "tx_id": "T004",
+      "failure_type": "Timeout",
+      "exception": "TimeoutError",
+      "recovery_action": "Logged failure, transaction skipped, processing continued",
+      "final_status": "Failed"
+    },
+    {
+      "tx_id": "T005",
+      "failure_type": "None",
+      "exception": null,
+      "recovery_action": "None needed",
+      "final_status": "Success"
+    },
+    {
+      "tx_id": "T006",
+      "failure_type": "Database",
+      "exception": "DatabaseError",
+      "recovery_action": "Logged failure, transaction skipped, processing continued",
+      "final_status": "Failed"
+    },
+    {
+      "tx_id": "T007",
+      "failure_type": "None",
+      "exception": null,
+      "recovery_action": "None needed",
+      "final_status": "Success"
+    },
+    {
+      "tx_id": "T008",
+      "failure_type": "Network",
+      "exception": "ConnectionError",
+      "recovery_action": "Logged failure, transaction skipped, processing continued",
+      "final_status": "Failed"
+    },
+    {
+      "tx_id": "T009",
+      "failure_type": "None",
+      "exception": null,
+      "recovery_action": "None needed",
+      "final_status": "Success"
+    },
+    {
+      "tx_id": "T010",
+      "failure_type": "Timeout",
+      "exception": "TimeoutError",
+      "recovery_action": "Logged failure, transaction skipped, processing continued",
+      "final_status": "Failed"
+    },
+    {
+      "tx_id": "T011",
+      "failure_type": "None",
+      "exception": null,
+      "recovery_action": "None needed",
+      "final_status": "Success"
+    },
+    {
+      "tx_id": "T012",
+      "failure_type": "Database",
+      "exception": "DatabaseError",
+      "recovery_action": "Logged failure, transaction skipped, processing continued",
+      "final_status": "Failed"
+    },
+    {
+      "tx_id": "T013",
+      "failure_type": "None",
+      "exception": null,
+      "recovery_action": "None needed",
+      "final_status": "Success"
+    },
+    {
+      "tx_id": "T014",
+      "failure_type": "None",
+      "exception": null,
+      "recovery_action": "None needed",
+      "final_status": "Success"
+    },
+    {
+      "tx_id": "T015",
+      "failure_type": "Network",
+      "exception": "ConnectionError",
+      "recovery_action": "Logged failure, transaction skipped, processing continued",
+      "final_status": "Failed"
+    }
+  ],
+  "part_c_final": {
+    "T001": "Success",
+    "T002": "Success",
+    "T003": "Success",
+    "T004": "Success",
+    "T005": "Success",
+    "T006": "Rollback",
+    "T007": "Success",
+    "T008": "Success",
+    "T009": "Success",
+    "T010": "Success",
+    "T011": "Success",
+    "T012": "Rollback",
+    "T013": "Success",
+    "T014": "Success",
+    "T015": "Success"
+  },
+  "part_d": {
+    "successful": [
+      "T001",
+      "T002",
+      "T003",
+      "T004",
+      "T005",
+      "T007",
+      "T008",
+      "T009",
+      "T010",
+      "T011",
+      "T013",
+      "T014",
+      "T015"
+    ],
+    "failed_rollback": [
+      "T006",
+      "T012"
+    ],
+    "processed_amount": 287000,
+    "lost_amount": 150000,
+    "retry_events": 11,
+    "rollback_events": [
+      {
+        "tx_id": "T006",
+        "restored_to": "CP1",
+        "restored_count": 5,
+        "restored_amount": 103000
+      },
+      {
+        "tx_id": "T012",
+        "restored_to": "CP2",
+        "restored_count": 10,
+        "restored_amount": 214000
+      }
+    ],
+    "checkpoints": [
+      {
+        "label": "CP1",
+        "count": 5,
+        "amount": 103000,
+        "state_ids": [
+          "T001",
+          "T002",
+          "T003",
+          "T004",
+          "T005"
+        ]
+      },
+      {
+        "label": "CP2",
+        "count": 10,
+        "amount": 214000,
+        "state_ids": [
+          "T001",
+          "T002",
+          "T003",
+          "T004",
+          "T005",
+          "T007",
+          "T008",
+          "T009",
+          "T010",
+          "T011"
+        ]
+      },
+      {
+        "label": "CP3 (final)",
+        "count": 13,
+        "amount": 287000,
+        "state_ids": [
+          "T001",
+          "T002",
+          "T003",
+          "T004",
+          "T005",
+          "T007",
+          "T008",
+          "T009",
+          "T010",
+          "T011",
+          "T013",
+          "T014",
+          "T015"
+        ]
+      }
+    ]
+  },
+  "total_amount": 437000
+}
